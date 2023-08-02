@@ -4,12 +4,12 @@ import { Outlet, useNavigate } from 'react-router-dom';
 import dayjs from 'dayjs';
 import { AiFillGithub } from "react-icons/ai"; 
 
-const LayoutStyle = styled.div`
-  background-color: aliceblue;
-  padding: 50px;
-  display: flex;
+const HeaderStyle = styled.div`
   justify-content: space-between;
-  align-items: center;
+  align-items: center;  
+  background-color: #fff;
+  padding: 30px;
+  display: flex;
 
   .title {
     display: flex;
@@ -28,10 +28,10 @@ const LayoutStyle = styled.div`
       margin-left: 10px;
     }
   }
-`;
+  `;
 
-const FooterStyle = styled(LayoutStyle)`
-  background-color: greenyellow;
+const FooterStyle = styled(HeaderStyle)`
+  background-color: #fff;
   padding: 20px;
 
   p {
@@ -58,7 +58,7 @@ function Layout(props) {
 
   return (
     <>
-      <LayoutStyle>
+      <HeaderStyle>
         <div className='title'>
           <h1> 나는 제목 </h1>
           <h2>/ FE developer</h2>
@@ -69,7 +69,7 @@ function Layout(props) {
           <li onClick={() => navigate('/skills')}>Skills</li>
           <li onClick={() => navigate('/project')}>Project</li>
         </ul>
-      </LayoutStyle>
+      </HeaderStyle>
 
       <Outlet />
 

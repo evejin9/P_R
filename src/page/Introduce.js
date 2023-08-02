@@ -1,10 +1,27 @@
 import React from 'react';
+import styled from 'styled-components';
+import IntroduceCard from '../components/Introduce/IntroduceCard';
+
+import introduceData from "../introduceData.json";
+
+const IntroduceStyle = styled.div`
+  height: 595px;
+  background-color: #8EA7E9;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 function Introduce(props) {
   return (
-    <div>
-      나는 자기소개
-    </div>
+    <IntroduceStyle>
+      { 
+        introduceData.map(introduce => {
+          return <IntroduceCard introduce={introduce} />
+        })
+      }
+    </IntroduceStyle>
   );
 }
 
