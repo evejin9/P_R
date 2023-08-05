@@ -8,6 +8,7 @@ const IntroduceCardStyle= styled.div`
   /* border: 1px solid #000; */
   border-radius: 8px;
   padding: 20px;
+  margin: 20px;
 
   h3 {
     font-size: 20px;
@@ -25,12 +26,12 @@ const IntroduceCardStyle= styled.div`
   p {
     padding-top: 20px;
     flex: 1;
-    word-wrap: break-word;
+    word-break: keep-all;
   }
 `;
 
 function IntroduceCard(props) {
-const { title, content } = props; 
+const { introduce : { title, content } } = props; 
 
   return (
     <IntroduceCardStyle>

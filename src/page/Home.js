@@ -6,7 +6,7 @@ import { RiNotionFill } from "react-icons/ri";
 import profilePic from "../image/profile.jpg";
 
 const HomeStyle = styled.div`
-  height: 595px;
+  height: 700px;
 `;
 
 const BgGroup = styled.div` 
@@ -40,7 +40,6 @@ const ProfileGroup = styled.div`
   left: 0px;
   right:0px;
 
-  
   h2 {
     font-size: 40px;
     font-weight: 700;
@@ -105,8 +104,12 @@ const ProfileContent = styled.div`
   };
 
   h4 + p {
-    margin-top: 20px;
+    margin-top: 40px;
   };
+
+  p + p {
+    margin-top: 10px;
+  }
 `;
 
 
@@ -131,7 +134,8 @@ function Home(props) {
           <ProfileContent>
             <h2>안녕하세요</h2>
             <h4>나무처럼 성장하는 개발자</h4>
-            <p>어쩌고 저쩌고 블라블라</p>
+            <p>새로 배우는 것을 좋아하고 활용하는 것을 즐깁니다.</p>
+            <p>책임감을 가지고 주어진 일을 끝까지 해내려 노력합니다.</p>
             {/* 버튼 */}
           </ProfileContent>
         </ProfileGroup>
