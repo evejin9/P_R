@@ -15,7 +15,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2'); */
+@import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2');
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

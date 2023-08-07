@@ -22,11 +22,11 @@
   {
     "id": "3",
     "title": "Portfolio by Sujin",
-    "picture": "./image/포트폴리오.png",
+    "picture": "https://tiny-minibus-e8b.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F99bdd70f-b673-4a67-b0fa-16438d7edde5%2F%25ED%258F%25AC%25ED%258A%25B8%25ED%258F%25B4%25EB%25A6%25AC%25EC%2598%25A4.png?table=block&id=12e3e3b2-7369-4457-813c-62444ae4bd50&spaceId=7ddb3b53-8d02-49bb-8256-b564fa931a0f&width=1390&userId=&cache=v2",
     "content": "포트폴리오를 위해 제작한 웹입니다.\n React와 Styled-Components를 사용하였고,\n react-router-dom을 통해 라우팅을 구현하였습니다.",
     "detail": "자기소개 및 기술 정리, 프로젝트 모음",
     "github": "https://github.com/evejin9/P_R.git",
-    "pageUrl":"",
+    "pageUrl":"https://moonlit-daifuku-5c65b1.netlify.app/",
     "skills": "React.js, Node.js, react-router-dom, Styled-Components"
   }
 ]

@@ -39,7 +39,8 @@ const ContentDetail = styled.div`
   justify-content: space-between;
 
   .content {
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 23px;
     margin: 50px 0;
     white-space: pre-wrap;
   }
@@ -49,7 +50,7 @@ const DetailGroup = styled.div`
   margin: 10px 0;
   display: flex;
   justify-content: flex-start;
-  font-size: 12px;
+  font-size: 14px;
   
 
   svg {
