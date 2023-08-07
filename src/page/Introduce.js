@@ -39,8 +39,6 @@ function Introduce(props) {
       { 
         introduceData.map(introduce => {
 
-          console.log(introduce);
-
           return <IntroduceCard key={introduce.id} introduce={introduce} />
         })
       }

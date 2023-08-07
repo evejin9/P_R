@@ -45,7 +45,6 @@ function Project(props) {
       <ProjectGroup>
         {
           projects.map(project => {
-            console.log(project);
             return <ProjectCard key={project.id} project={project} />
           })
         }
