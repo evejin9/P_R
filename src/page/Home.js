@@ -4,6 +4,7 @@ import { AiOutlineGithub } from "react-icons/ai";
 import { RiNotionFill } from "react-icons/ri";
 
 import profilePic from "../image/profile.jpg";
+import { Link } from 'react-router-dom';
 
 const HomeStyle = styled.div`
   height: 700px;
@@ -88,10 +89,10 @@ const ProfileCard = styled.div`
 
   svg {
     font-size: 30px;
-    margin-bottom: 15px;
+    margin: 0 5px 15px 5px;
   };
-
-  svg + svg {
+  
+  Link + Link {
     margin-left: 20px;
   };
   `;
@@ -127,8 +128,8 @@ function Home(props) {
             <p>FE developer</p>
 
             <div className='sns-Icon'>
-              <AiOutlineGithub />
-              <RiNotionFill />
+            <Link to={'https://github.com/evejin9'} target='_blank'><AiOutlineGithub /></Link>
+            <Link to={'https://tiny-minibus-e8b.notion.site/FE-0f3936aea6664243b7d2b7a786a5ca2a'} target='_blank'><RiNotionFill /></Link>
             </div>
           </ProfileCard>
           <ProfileContent>

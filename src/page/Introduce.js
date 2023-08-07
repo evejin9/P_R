@@ -44,6 +44,8 @@ function Introduce(props) {
           return <IntroduceCard key={introduce.id} introduce={introduce} />
         })
       }
+
+      
       </IntroduceCardArea>
     </IntroduceStyle>
   );

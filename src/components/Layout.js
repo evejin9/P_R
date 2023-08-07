@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Outlet, useNavigate } from 'react-router-dom';
+import { Link, Outlet, useNavigate } from 'react-router-dom';
 import dayjs from 'dayjs';
 import { AiFillGithub } from "react-icons/ai"; 
 
@@ -84,7 +84,7 @@ function Layout(props) {
           <p>evejin9@gmail.com</p>
         </FooterGroup>
         <FooterGroup>
-          <AiFillGithub />
+          <Link to={'https://github.com/evejin9'} target='_blank'><AiFillGithub /></Link>
         </FooterGroup>
       </FooterStyle>
     </>

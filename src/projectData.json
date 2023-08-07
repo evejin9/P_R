@@ -3,7 +3,7 @@
     "id": "1",
     "title": "좋아할 만두",
     "picture": "https://tiny-minibus-e8b.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F3e68ffb1-879f-47c6-9120-a12b28649e52%2F%25EC%25A2%258B%25EC%2595%2584%25ED%2595%25A0%25EB%25A7%258C%25EB%2591%2590.png?table=block&id=2614cfb5-58f3-4766-944c-5f4fa135492d&spaceId=7ddb3b53-8d02-49bb-8256-b564fa931a0f&width=1820&userId=&cache=v2",
-    "content": "첫 개인 프로젝트 및 퍼블리싱 프로젝트인 좋아할 만두입니다. ",
+    "content": "첫 개인 프로젝트 및 퍼블리싱 프로젝트인 좋아할 만두입니다.\n 만두 가게 도장 깨기 서비스를 컨셉으로 잡아 기획하였으며,\n 가게의 정보 및 냉동 만두를 리뷰하는 사이트입니다.\n 현재 리액트로 재구성할 예정입니다.",
     "detail": "youtube iframe api 이용한 동영상 출력, swiper를 통한 슬라이드 기능 출력",
     "github": "https://github.com/evejin9/Dumpling.git",
     "pageUrl":"https://mellifluous-sundae-470543.netlify.app/",
@@ -13,20 +13,20 @@
     "id": "2",
     "title": "Failmy-Talk",
     "picture": "https://tiny-minibus-e8b.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F704d55fa-715d-4a37-9aba-7686a049120e%2Ffamily-talk.png?table=block&id=ed4b4c4a-9660-40d6-9db6-86b0440dde14&spaceId=7ddb3b53-8d02-49bb-8256-b564fa931a0f&width=1820&userId=&cache=v2",
-    "content": "가족 일상 공유 플랫폼 서비스 Family-Talk 입니다. 기획부터 배포까지 참여한 최초의 팀 프로젝트입니다. Redux를 통한 상태 공유와 토스 페이먼츠 및 카카오 API를 사용하여 적용하였습니다.",
+    "content": "가족 일상 공유 플랫폼 서비스 Family-Talk 입니다.\n 기획부터 배포까지 참여한 최초의 팀 프로젝트입니다.\n Redux를 통한 상태 공유와 토스 페이먼츠 및 카카오 API를 사용하여 적용하였습니다.",
     "detail": "가족 공동 캘린더 기능, 포토 게시물 기능, 채팅 기능 및 실시간 위치 전송 기능, 유료 결제 기능, 로그인 및 회원가입 기능",
     "github": "https://github.com/evejin9/Family-Talk.git",
     "pageUrl":"https://splendid-tiramisu-36a28c.netlify.app/",
-    "skills": "React.js, Node.js, Redux, Axios, Styled-Components, Kakao map API"
+    "skills": "React.js, Node.js, Redux, Axios, react-router-dom, Styled-Components, Kakao map API"
   },
   {
     "id": "3",
     "title": "Portfolio by Sujin",
     "picture": "./image/포트폴리오.png",
-    "content": "포트폴리오를 위한 웹입니다",
+    "content": "포트폴리오를 위해 제작한 웹입니다.\n React와 Styled-Components를 사용하였고,\n react-router-dom을 통해 라우팅을 구현하였습니다.",
     "detail": "자기소개 및 기술 정리, 프로젝트 모음",
     "github": "https://github.com/evejin9/P_R.git",
     "pageUrl":"",
-    "skills": "React.js, Node.js, Styled-Components"
+    "skills": "React.js, Node.js, react-router-dom, Styled-Components"
   }
 ]
