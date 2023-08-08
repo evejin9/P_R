@@ -4,7 +4,7 @@ import { AiOutlineGithub } from "react-icons/ai";
 import { RiNotionFill } from "react-icons/ri";
 
 import profilePic from "../image/profile.jpg";
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const HomeStyle = styled.div`
   height: 700px;
@@ -29,6 +29,7 @@ const BgGroup = styled.div`
 const ProfileGroup = styled.div`
   height: 350px;
   background-color: transparent;
+  word-break: keep-all;
 
   display: flex;
   justify-content: center;
@@ -49,7 +50,25 @@ const ProfileGroup = styled.div`
   h4 {
     font-size: 23px;
   };
+
+  @media screen and (max-width: 700px) {
+    h2 {
+      font-size: 20px;
+    }
+
+    h4 {
+      font-size: 17px;
+    }
+  }
 `;
+
+const SnsLink = styled(NavLink)`
+  color: #000;
+
+  &:hover {
+    color: #7286D3;
+  }
+`
 
 const ProfileCard = styled.div`
   width: 280px;
@@ -91,10 +110,32 @@ const ProfileCard = styled.div`
     font-size: 30px;
     margin: 0 5px 15px 5px;
   };
-  
-  Link + Link {
-    margin-left: 20px;
-  };
+
+  @media screen and (max-width: 700px) {
+    width: 180px;
+    margin-left: 15px;
+
+    img {
+      width: 100px;
+    }
+
+    h4 {
+      margin: 0;
+    };
+
+    p {
+      font-size: 17px;
+      margin-top: 0;
+      margin-bottom: 30px;
+    };
+
+    p:before {
+    }
+
+    svg {
+      font-size: 25px;
+    }
+  }
   `;
 
 const ProfileContent = styled.div`
@@ -111,6 +152,20 @@ const ProfileContent = styled.div`
   p + p {
     margin-top: 10px;
   }
+
+  @media screen and (max-width: 700px) {
+    margin-left: 0px;
+    padding: 15px;
+
+    h4 + p {
+      margin-top: 20px;
+    };
+
+    p {
+      font-size: 12px;
+    }
+  }
+
 `;
 
 
@@ -128,8 +183,8 @@ function Home(props) {
             <p>FE developer</p>
 
             <div className='sns-Icon'>
-            <Link to={'https://github.com/evejin9'} target='_blank'><AiOutlineGithub /></Link>
-            <Link to={'https://tiny-minibus-e8b.notion.site/FE-0f3936aea6664243b7d2b7a786a5ca2a'} target='_blank'><RiNotionFill /></Link>
+            <SnsLink to={'https://github.com/evejin9'} target='_blank'><AiOutlineGithub /></SnsLink>
+            <SnsLink to={'https://tiny-minibus-e8b.notion.site/FE-0f3936aea6664243b7d2b7a786a5ca2a'} target='_blank'><RiNotionFill /></SnsLink>
             </div>
           </ProfileCard>
           <ProfileContent>

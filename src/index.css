@@ -1,21 +1,13 @@
-
-@font-face {
+/* @font-face {
   font-family: 'Dovemayo_gothic';
   src: url('./font/Dovemayo_gothic.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 body {
   margin: 0;
-  font-family: 'Dovemayo_gothic';
+  font-family: 'Dovemayo_gothic', Arial, Helvetica, sans-serif;
   /* -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
-}
-
-/* @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2'); */
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }

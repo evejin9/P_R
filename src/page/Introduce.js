@@ -6,7 +6,6 @@ import introduceData from "../introduceData.json";
 
 const IntroduceStyle = styled.div`
   min-height: 700px;
-  padding: 30px 0;
   background-color: #8EA7E9;
   display: flex;
   flex-direction: column;
@@ -21,6 +20,13 @@ const IntroduceStyle = styled.div`
   h4 {
     font-size: 23px;
   };
+
+  @media screen and (max-width: 700px) {
+    h2 {
+      font-size: 30px;
+      padding-bottom: 20px;
+    }
+  }
 `;
 
 const IntroduceCardArea = styled.div`

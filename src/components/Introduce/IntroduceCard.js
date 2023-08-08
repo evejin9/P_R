@@ -28,6 +28,24 @@ const IntroduceCardStyle= styled.div`
     flex: 1;
     word-break: keep-all;
   }
+
+  @media screen and (max-width: 700px) {
+    width: 150px;
+    height: 150px;
+
+    h3 {
+      font-size: 15px;
+    }
+
+    h3:after {
+      margin: 10px auto;
+    }
+
+    p {
+      font-size: 13px;
+      padding-top: 10px;
+    }
+  }
 `;
 
 function IntroduceCard(props) {

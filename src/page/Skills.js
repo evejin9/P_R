@@ -24,6 +24,18 @@ const SkillsStyle = styled.div`
   li {
     padding: 10px;
   }
+
+  @media screen and (max-width: 700px) {
+    h2 {
+      font-size: 30px;
+      padding-bottom: 30px;
+    }
+
+    h4 {
+      padding: 10px;
+      margin: 20px 0;
+    }
+  }
 `;
 
 const SkillsGroup = styled.div`
@@ -32,14 +44,23 @@ const SkillsGroup = styled.div`
   border-radius: 10px;
   padding: 30px;
 
-
   display: flex;
   justify-content: space-around;
   
+  @media screen and (max-width: 700px) {
+    width: 90%;
+  }
 `;
 
 const SkillsPart = styled.div`
-  /* padding: 0 20px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
 
   h4:after {
     content: "";
