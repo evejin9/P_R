@@ -12,9 +12,9 @@ const IntroduceStyle = styled.div`
   justify-content: center;
 
   h2 {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 700;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
   };
 
   h4 {
