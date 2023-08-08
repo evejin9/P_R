@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import "./font/font.css";
 import { Route, Routes } from 'react-router-dom';
 
 import Layout from './components/Layout';
@@ -15,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     box-sizing: border-box;
+    font-family: 'Dovemayo_gothic';
   }
 
   #root {

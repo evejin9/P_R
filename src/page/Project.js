@@ -26,6 +26,15 @@ const ProjectStyle = styled.div`
   h4 {
     font-size: 23px;
   };
+
+  @media screen and (max-width: 700px) {
+    padding-top: 30px;
+
+    h2 {
+      font-size: 30px;
+      padding-bottom: 20px;
+    }
+  }
 `;
 
 const ProjectGroup = styled.div`
@@ -34,6 +43,10 @@ const ProjectGroup = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 700px) {
+    margin: 0px 20px;
+  }
 `;
 
 

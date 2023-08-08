@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { AiFillPushpin } from "react-icons/ai";
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const ProjectCardStyle = styled.div`
   width: 100%;
@@ -26,9 +26,17 @@ const ProjectCardStyle = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+  }
 
-    /* 미디어쿼리 */
-    /* flex-wrap: wrap; */
+  /* 미디어쿼리 */
+  @media screen and (max-width: 900px) {
+    .imgContent {
+      flex-wrap: wrap;
+    }
+
+    img {
+      width: 100%;
+    }
   }
 `;
 
@@ -37,6 +45,7 @@ const ContentDetail = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-left: 10px;
 
   .content {
     font-size: 18px;
@@ -50,6 +59,7 @@ const DetailGroup = styled.div`
   margin: 10px 0;
   display: flex;
   justify-content: flex-start;
+  align-items: flex-start;
   font-size: 14px;
   
 
@@ -69,6 +79,17 @@ const DetailTitle = styled.div`
   margin-right: 20px;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
+`;
+
+const PageLink = styled(NavLink)`
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+
+  &:hover {
+    color: #7286D3;
+  }
 `;
 
 function ProjectCard(props) {
@@ -94,14 +115,14 @@ function ProjectCard(props) {
             <DetailGroup>
               <DetailTitle>
                 <AiFillPushpin />
-                <p><Link to={github} target='_blank'>Github</Link></p>
+                <p><PageLink to={github} target='_blank'>Github</PageLink></p>
               </DetailTitle>
             </DetailGroup>
 
             <DetailGroup>
               <DetailTitle>
                 <AiFillPushpin />
-                <p><Link to={pageUrl} target='_blank'>PageUrl</Link></p>
+                <p><PageLink to={pageUrl} target='_blank'>PageUrl</PageLink></p>
               </DetailTitle>
             </DetailGroup>
 

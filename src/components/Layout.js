@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link, Outlet, useNavigate } from 'react-router-dom';
+import { Link, NavLink, Outlet, useNavigate } from 'react-router-dom';
 import dayjs from 'dayjs';
 import { AiFillGithub } from "react-icons/ai"; 
 
@@ -13,6 +13,7 @@ const HeaderStyle = styled.div`
 
   .title {
     display: flex;
+    align-items: center;
 
     h1 {
       font-size: 20px;
@@ -24,8 +25,28 @@ const HeaderStyle = styled.div`
   ul {
     display: flex;
     
+    li:hover {
+      font-weight: 700;
+      color: #8EA7E9;
+    }
+
     li + li {
       margin-left: 10px;
+    }
+  }
+
+  /* 미디어쿼리 */
+  @media screen and (max-width: 700px) {
+    .title h1 {
+      font-size: 16px;
+    }
+
+    h2 {
+      font-size: 13px;
+    }
+
+    ul li {
+      font-size: 13px;
     }
   }
   `;
@@ -50,6 +71,18 @@ const FooterGroup = styled.div`
   };
 `;
 
+const GitLink = styled(NavLink)`
+  color: #000;
+
+  &:hover {
+    color: #7286D3;
+  }
+
+  svg {
+    font-size: 20px;
+  }
+`
+
 function Layout(props) {
 
   const navigate = useNavigate();
@@ -60,14 +93,14 @@ function Layout(props) {
     <>
       <HeaderStyle>
         <div className='title'>
-          <h1> 나는 제목 </h1>
+          <h1> 김수진 </h1>
           <h2>/ FE developer</h2>
         </div>
         <ul>
-          <li onClick={() => navigate('/')} >Home</li>
-          <li onClick={() => navigate('/introduce')}>Introduce</li>
-          <li onClick={() => navigate('/skills')}>Skills</li>
-          <li onClick={() => navigate('/project')}>Project</li>
+          <li className='cursor-pointer' onClick={() => navigate('/')} >Home</li>
+          <li className='cursor-pointer' onClick={() => navigate('/introduce')}>Introduce</li>
+          <li className='cursor-pointer' onClick={() => navigate('/skills')}>Skills</li>
+          <li className='cursor-pointer' onClick={() => navigate('/project')}>Project</li>
         </ul>
       </HeaderStyle>
 
@@ -84,7 +117,7 @@ function Layout(props) {
           <p>evejin9@gmail.com</p>
         </FooterGroup>
         <FooterGroup>
-          <Link to={'https://github.com/evejin9'} target='_blank'><AiFillGithub /></Link>
+          <GitLink to={'https://github.com/evejin9'} target='_blank'><AiFillGithub /></GitLink>
         </FooterGroup>
       </FooterStyle>
     </>
