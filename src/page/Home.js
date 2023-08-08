@@ -8,6 +8,10 @@ import { Link, NavLink } from 'react-router-dom';
 
 const HomeStyle = styled.div`
   height: 700px;
+
+  @media screen and (max-width: 700px) {
+    height: 550px;
+  }
 `;
 
 const BgGroup = styled.div` 
@@ -43,12 +47,12 @@ const ProfileGroup = styled.div`
   right:0px;
 
   h2 {
-    font-size: 40px;
-    font-weight: 700;
+    font-size: 45px;
+    font-weight: 600;
   };
 
   h4 {
-    font-size: 23px;
+    font-size: 25px;
   };
 
   @media screen and (max-width: 700px) {
@@ -113,7 +117,7 @@ const ProfileCard = styled.div`
 
   @media screen and (max-width: 700px) {
     width: 180px;
-    margin-left: 15px;
+    margin-left: 25px;
 
     img {
       width: 100px;
@@ -141,8 +145,12 @@ const ProfileCard = styled.div`
 const ProfileContent = styled.div`
   margin-left: 30px;
 
+  h2 {
+    padding-bottom: 40px;
+  }
+
   h2 + h4 {
-    margin-top: 20px;
+    margin-bottom: 40px;
   };
 
   h4 + p {
@@ -157,17 +165,27 @@ const ProfileContent = styled.div`
     margin-left: 0px;
     padding: 15px;
 
+    h2 {
+      font-size: 25px;
+      padding-bottom: 30px;
+    }
+
     h4 + p {
-      margin-top: 20px;
+      margin: 20px;
     };
 
     p {
       font-size: 12px;
     }
   }
-
 `;
 
+const Button = styled.span`
+  border-radius: 10px;
+  padding: 8px;
+  margin: 10px;
+  background-color: #E5E0FF;
+`;
 
 function Home(props) {
   return (
@@ -190,9 +208,13 @@ function Home(props) {
           <ProfileContent>
             <h2>안녕하세요</h2>
             <h4>나무처럼 성장하는 개발자</h4>
-            <p>새로 배우는 것을 좋아하고 활용하는 것을 즐깁니다.</p>
-            <p>책임감을 가지고 주어진 일을 끝까지 해내려 노력합니다.</p>
+            {/* <p>새로 배우는 것을 좋아하고 활용하는 것을 즐깁니다.</p>
+            <p>책임감을 가지고 주어진 일을 끝까지 해내려 노력합니다.</p> */}
+
             {/* 버튼 */}
+            <Button>성실</Button>
+            <Button>책임감</Button>
+            <Button>호기심</Button>
           </ProfileContent>
         </ProfileGroup>
       </BgGroup>

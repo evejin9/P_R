@@ -12,14 +12,14 @@ import portfolio from "../image/포트폴리오.png";
 
 const ProjectStyle = styled.div`
   min-height: 700px;
-  padding: 30px 0;
+  padding: 40px 0;
   background-color: #8EA7E9;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   h2 {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 700;
   };
 

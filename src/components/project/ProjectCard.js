@@ -5,7 +5,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 const ProjectCardStyle = styled.div`
   width: 100%;
-  padding: 30px;
+  padding: 40px;
   margin: 20px 0;
   border-radius: 10px;
   background-color: #fff;
@@ -13,9 +13,9 @@ const ProjectCardStyle = styled.div`
   word-break: keep-all;
 
   h3 {
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 50px;
   }
 
   img {
@@ -30,6 +30,12 @@ const ProjectCardStyle = styled.div`
 
   /* 미디어쿼리 */
   @media screen and (max-width: 900px) {
+    padding: 40px 25px;
+
+    h3 {
+      font-size: 25px;
+    }
+
     .imgContent {
       flex-wrap: wrap;
     }
@@ -48,10 +54,16 @@ const ContentDetail = styled.div`
   margin-left: 10px;
 
   .content {
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 20px;
+    line-height: 25px;
     margin: 50px 0;
     white-space: pre-wrap;
+  }
+
+  @media screen and (max-width: 900px) {
+    .content {
+      font-size: 15px;
+    }
   }
 `;
 
@@ -65,7 +77,7 @@ const DetailGroup = styled.div`
 
   svg {
     width: 30px;
-    color: red;
+    color: #E48586;
     margin-right: 5px;
   }
 
