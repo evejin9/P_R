@@ -28,5 +28,15 @@
     "github": "https://github.com/evejin9/P_R.git",
     "pageUrl":"https://moonlit-daifuku-5c65b1.netlify.app/",
     "skills": "React.js, Node.js, react-router-dom, Styled-Components"
+  },
+  {
+    "id": "4",
+    "title": "K.Flag Tour ",
+    "picture": "https://tiny-minibus-e8b.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F7ddb3b53-8d02-49bb-8256-b564fa931a0f%2F3a94cb31-3b2c-485a-a9c7-fa319e2b2205%2Fk.flag_Tour.png?table=block&id=ac998687-9184-4df1-b2e8-275dc66ca0ab&spaceId=7ddb3b53-8d02-49bb-8256-b564fa931a0f&width=1820&userId=&cache=v2",
+    "content": "여행사 'K.Flag Tour' 웹사이트 입니다.\n React와 Styled-Components,\n  google map Api를 활용하여 지도를 구현하였고, \n react-router-dom을 통해 라우팅을 구현하였습니다. \n 2명이 팀을 이루어 작업한 팀 프로젝트입니다.\n  의뢰인(팀원의 지인)의 취향에 따라 제작하였습니다.",
+    "detail": "여행사 및 투어 프로그램 소개",
+    "github": "https://github.com/evejin9/K.FlagTour",
+    "pageUrl":"https://k-flagtour.netlify.app",
+    "skills": "React.js, Node.js, react-router-dom, Styled-Components, google map api, swiper"
   }
 ]
